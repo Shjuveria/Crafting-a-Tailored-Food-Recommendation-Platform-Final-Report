@@ -1,0 +1,9 @@
+### Hi there 👋
+--> Please make sure to include all the project files in one folder.
+--> "assets" folder refers to all the images used on the website. --> "Bmyc" refers to the HTML FILTERS page where all the breakfast options are shown. --> "Bmeals1 - Bmeals5" refers to html Filters page where the food options in each breakfast type are displayed. --> "Bsingle-recipe1, Bsingle-recipe1.1 ....... Bsingle-recipe5.1" are single breakfast recipe cards. 
+-->"Lmyc" refers to the HTML FILTERS page where all the Lunch options are shown. --> "Lmeals1 - Lmeals5" refers to the HTML Filters page where the food options in each Lunch type are displayed. --> "Lsingle-recipe1, Lsingle-recipe1.1 ....... Lsingle-recipe5.1" are single Lunch recipe cards.
+--> "Dmyc" refers to the HTML FILTERS page where all the Dinner options are shown. --> "Dmeals1 - Dmeals5" refers to the HTML Filters page where the food options in each Dinner type are displayed. --> "Dsingle-recipe1, Dsingle-recipe1.1 ....... Dsingle-recipe5.1" are single Dinner recipe cards.
+--> "Brmyc" refers to the HTML FILTERS page where all the beverage options are shown.--> "Brmeals1 - Brmeals5" refers to the HTML Filters page where the food options in each beverage type are displayed. --> "Brsingle-recipe1, Brsingle-recipe1.1 ....... Brsingle-recipe5.1" are single Beverages recipe cards.
+you will find the HOME with the title "index", ABOUT page with the title "about", FILTERS page with the title "tags", COOKBOOK page with the title "recipe", and the error page with the title "404", and the required CSS files with titles "main" & "normalize", the helpful link page with title "remedy", "exercise" html file refers to the Exercises for cramps page, "food" html file refers to the Foods to avoid during menstruation.
+--> The "assets" folder in the frontend folder has all the images of the website.
+--> The project report is under the title "Final Project Report"
