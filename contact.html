@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact || Final</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url('./assets/contact-us-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      </style>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="about.html" class="nav-link"> About </a>
+          <a href="tags.html" class="nav-link"> Filters </a>
+          <a href="recipes.html" class="nav-link"> CookBook </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+        <section class="contact-container">
+    <div class="container" >
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Get In Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your E-mail ID" required>
+            <textarea id="message" rows="4" placeholder="Write to us and we will get back to you soon!"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div> 
+</section>
+</main>
+<!-- footer -->
+<footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">CravingsHub</span>
+    </p>
+  </footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "hub.cravings@gmail.com",
+            Password : "F8BF4BD27861D2CA2D931F2E79A120F5D710",
+            To : 'hub.cravings@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name: " +document.getElementById("name").value
+                 + "<br> Email: " + document.getElementById("email").value
+                 + "<br> Message: " + document.getElementById("message").value
+        }).then(
+        message => alert("Message Sent Successfully")
+        );
+    }
+  </script>
+</body>
+</html>           
